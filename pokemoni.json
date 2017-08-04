@@ -1,0 +1,32 @@
+{
+	"pokemons":[
+		{"name":"pikachu",   "color":"yellow", "url":"slike/pikachu.jpg"},
+		{"name":"arbok",	 "color":"purple", "url":"slike/arbok.jpg"},
+		{"name":"bastiodon", "color":"grey",   "url":"slike/bastiodon.jpg"},
+		{"name":"bronzor", 	 "color":"blue",   "url":"slike/bronzor.jpg"},
+		{"name":"bulbasaur", "color":"green",  "url":"slike/bulbasaur.jpg"},
+		{"name":"rotom",     "color":"orange", "url":"slike/rotom.jpg"},		
+		{"name":"froakie",   "color":"blue",   "url":"slike/froakie.jpg"},
+		{"name":"zekrom",    "color":"black",  "url":"slike/zekrom.jpg"},
+		{"name":"avalugg",   "color":"blue",   "url":"slike/avalugg.jpg"},
+		{"name":"litten",    "color":"black",  "url":"slike/litten.jpg"},
+		{"name":"squirtle",  "color":"blue",   "url":"slike/squirtle.jpg"},
+		{"name":"ninetales", "color":"yellow", "url":"slike/ninetales.jpg"},
+		{"name":"gengar",    "color":"purple", "url":"slike/gengar.jpg"},
+		{"name":"turtwig",   "color":"green",  "url":"slike/turtwig.jpg"},		
+		{"name":"mudkip",    "color":"blue",   "url":"slike/mudkip.jpg"},
+		{"name":"sharpedo",  "color":"blue",   "url":"slike/sharpedo.jpg"},
+		{"name":"metang",    "color":"blue",   "url":"slike/metang.jpg"},
+		{"name":"celebi",    "color":"green",  "url":"slike/celebi.jpg"},
+		{"name":"samurott",  "color":"blue",   "url":"slike/samurott.jpg"},
+		{"name":"tirtouga",  "color":"blue",   "url":"slike/tirtouga.jpg"},
+		
+		{"name":"yveltal",   "color":"red",    "url":"slike/yveltal.jpg"},
+		{"name":"kyogre",    "color":"blue",   "url":"slike/kyogre.jpg"},
+		{"name":"groudon",   "color":"red",    "url":"slike/groudon.jpg"},
+		{"name":"palkia",    "color":"white",  "url":"slike/palkia.jpg"},
+		{"name":"dialga",    "color":"blue",   "url":"slike/dialga.jpg"},
+		{"name":"charizard", "color":"orange", "url":"slike/charizard.jpg"}
+		
+	]
+}

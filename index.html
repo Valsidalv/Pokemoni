@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokemoni</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<style type="text/css">
+		table, th, td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 15px;
+		}
+
+		img{
+			width: 150px;
+			height: 150px;
+		}
+
+		div{
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body ng-app="pokeApp">
+	<div ng-controller="ctrl">
+		Filter by name: <input type="search"  ng-model="pokeName" /> 
+		Filter by color: <input type="search" ng-model="pokeColor" />
+		
+		<h3>When you filter by color, click on the "Name" to order them by alphabetically.</h3>
+		<table>
+			<thead>
+				<th ng-click="orderBy('name')">Name</th>
+				<th>Color</th>
+				<th>Picture</th>
+			</thead>
+			<tr ng-repeat="x in myData | filter:{name:pokeName, color:pokeColor} | orderBy:myOrder">
+				<td>{{x.name}}</td>
+				<td>{{x.color}}</td>
+				<td><img src="{{x.url}}" alt="slika"></td>				
+			</tr>
+		</table>		
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module("pokeApp", []);
+		app.controller("ctrl", function($scope, $http){
+			
+			$http.get("pokemoni.json").then(function(response){
+				$scope.myData = response.data.pokemons;
+			});
+
+			$scope.orderBy = function(x) {
+    			$scope.myOrder = x;
+    		}    		
+    		
+	});
+
+
+	</script>
+</body>
+</html>
